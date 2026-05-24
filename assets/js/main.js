@@ -1,5 +1,5 @@
 /* ========================================
-   Main JS — Nav scroll behavior
+   Main JS — Nav scroll + App Store deep link
    ======================================== */
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,4 +22,24 @@ document.addEventListener("DOMContentLoaded", () => {
       ticking = true;
     }
   });
+
+  // App Store deep link — open App Store app directly on Apple devices
+  const isApple = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
+  const APP_ID = "6764510070";
+
+  if (isApple) {
+    document.querySelectorAll(".badge-link[data-store]").forEach((link) => {
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        const store = link.getAttribute("data-store");
+        if (store === "mac") {
+          // macappstore:// scheme opens Mac App Store directly
+          window.location.href = "macappstore://apps.apple.com/app/id" + APP_ID;
+        } else {
+          // itms-apps:// scheme opens iOS App Store directly
+          window.location.href = "itms-apps://apps.apple.com/app/id" + APP_ID;
+        }
+      });
+    });
+  }
 });

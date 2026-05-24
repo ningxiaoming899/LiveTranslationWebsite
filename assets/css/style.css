@@ -201,17 +201,23 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   flex-wrap: wrap;
 }
 
 .badge-link {
   display: inline-block;
   transition: transform 0.2s;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .badge-link:hover {
-  transform: scale(1.05);
+  transform: scale(1.04);
+}
+
+.badge-link:active {
+  transform: scale(0.96);
 }
 
 .badge-link img {
@@ -389,5 +395,19 @@ a:hover {
 
   .nav-cta {
     display: none;
+  }
+
+  .hero-badges {
+    gap: var(--space-xs);
+    padding: 0 var(--space-md);
+  }
+
+  .badge-link img {
+    height: 36px;
+  }
+
+  .hero-logo {
+    width: 64px;
+    height: 64px;
   }
 }
