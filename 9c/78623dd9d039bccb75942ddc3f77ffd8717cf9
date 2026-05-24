@@ -1,0 +1,31 @@
+index.html
+  s_a3f73e27ce6fe1::t_e92c56c2c8faf7 79,82,86,89
+assets/images/appstore-badge-en.svg
+  s_a3f73e27ce6fe1::t_20e6730692c828 1-8
+assets/images/mac-appstore-badge-en.svg
+  s_a3f73e27ce6fe1::t_685436f957956d 1-8
+assets/images/appstore-badge-zh.svg
+  s_a3f73e27ce6fe1::t_43700f813c9e80 3-8
+assets/js/main.js
+  s_a3f73e27ce6fe1::t_dc6f4b6a0e4444 2,25-44
+assets/images/mac-appstore-badge-zh.svg
+  s_a3f73e27ce6fe1::t_863fa7386906b2 1-8
+assets/css/style.css
+  s_a3f73e27ce6fe1::t_5acd03c8319be7 204,211-212,216-220,399-411
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "9c78623dd9d039bccb75942ddc3f77ffd8717cf9",
+  "prompts": {},
+  "sessions": {
+    "s_a3f73e27ce6fe1": {
+      "agent_id": {
+        "tool": "github-copilot",
+        "id": "28b0011e-103f-453b-a897-1cea84a5b0f4",
+        "model": "gpt-4.1"
+      },
+      "human_author": "xiaoming.ning <xiaoming.ning@ly.com>"
+    }
+  }
+}
