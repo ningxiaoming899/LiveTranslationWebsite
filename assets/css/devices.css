@@ -1,0 +1,127 @@
+/* ========================================
+   CSS Device Mockups — MacBook & iPhone
+   ======================================== */
+
+/* --- MacBook --- */
+.device-macbook {
+  position: relative;
+  width: 72%;
+  max-width: 740px;
+}
+
+.device-macbook-screen {
+  position: relative;
+  background: #1e1e1e;
+  border-radius: 12px 12px 0 0;
+  padding: 8px 8px 0;
+  border: 2px solid #3a3a3c;
+  border-bottom: none;
+}
+
+.device-macbook-screen::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #3a3a3c;
+  margin: 0 auto 6px;
+}
+
+.device-macbook-screen img {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  display: block;
+}
+
+.device-macbook-base {
+  position: relative;
+  height: 14px;
+  background: linear-gradient(to bottom, #c0c0c4, #a8a8ac);
+  border-radius: 0 0 2px 2px;
+}
+
+.device-macbook-base::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18%;
+  height: 4px;
+  background: #8e8e93;
+  border-radius: 0 0 4px 4px;
+}
+
+.device-macbook-base::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+  height: 3px;
+  background: #6e6e73;
+  border-radius: 0 0 8px 8px;
+}
+
+/* --- iPhone --- */
+.device-iphone {
+  position: absolute;
+  right: 2%;
+  bottom: -8%;
+  width: 22%;
+  max-width: 220px;
+  z-index: 10;
+}
+
+.device-iphone-frame {
+  position: relative;
+  background: #1c1c1e;
+  border-radius: 28px;
+  padding: 12px 8px;
+  border: 3px solid #2c2c2e;
+  box-shadow: var(--shadow-product);
+}
+
+.device-iphone-notch {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 28%;
+  height: 22px;
+  background: #1c1c1e;
+  border-radius: 0 0 14px 14px;
+  z-index: 5;
+}
+
+.device-iphone-frame img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Shadows --- */
+.device-macbook,
+.device-iphone {
+  filter: drop-shadow(0 5px 30px rgba(0, 0, 0, 0.18));
+}
+
+/* --- Responsive overrides --- */
+@media (max-width: 768px) {
+  .device-macbook {
+    width: 100%;
+    max-width: 480px;
+  }
+
+  .device-iphone {
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: 45%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}

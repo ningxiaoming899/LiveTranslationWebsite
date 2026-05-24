@@ -1,0 +1,10 @@
+# 秒译官网 — Cloudflare Pages 部署
+name = "miaoyi-website"
+compatibility_date = "2025-05-23"
+
+# Static site — no build step needed
+[site]
+bucket = "."
+
+# Custom domain (configure in Cloudflare dashboard)
+# route = "miaoyi.app/*"

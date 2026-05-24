@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# Redirect www to apex
+https://www.miaoyi.app/* https://miaoyi.app/:splat 301
