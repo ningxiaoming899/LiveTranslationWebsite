@@ -1,0 +1,14 @@
+index.html
+  h_8a7b201b83576f 1-156
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.0",
+  "base_commit_sha": "824fdd7d651da79f079b1fa95f2685d24b3aa5b6",
+  "prompts": {},
+  "humans": {
+    "h_8a7b201b83576f": {
+      "author": "xiaoming.ning <xiaoming.ning@ly.com>"
+    }
+  }
+}
